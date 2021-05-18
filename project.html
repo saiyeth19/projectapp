@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Project</title>
+    <style>
+        .main{  
+    text-align: center;
+background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+margin-top: 100px;
+padding: 5px;
+margin-right:50px ;
+margin-left: 100px;
+margin-bottom: 100px;
+border-radius: .7rem;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+button{
+    color: black;
+    background-color:rgb(216, 216, 46);
+    margin-bottom: 2%;
+    padding: 5px;
+    border-radius: .4rem;
+    width: 150px;
+}
+button:hover{
+    color:  black;
+    background-color: rgb(252, 252, 8)
+}
+body{
+    background-color: coral;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="main">
+            <h1 >Drainage Management System</h1>
+         <button onClick="gas()">Gas</button><br>
+         <button onClick="waterFlow()">waterFlow</button><br>
+         <button onclick="waterLevel()">WaterLevel</button><br>
+         <button onclick="manHoleStatus()">ManHole Status</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function waterFlow(){
+        window.location.href="https://thingspeak.com/channels/1389990/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
+    }
+    function gas(){
+      window.location.href="https://thingspeak.com/channels/1389990/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
+
+    }
+    function waterLevel(){
+        window.location.href="https://thingspeak.com/channels/1389990/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15";
+ 
+    }
+    function manHoleStatus(){
+        window.location.href="https://thingspeak.com/channels/1389990/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+    }
+</script>
