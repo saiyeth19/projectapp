@@ -29,14 +29,14 @@
         	
             let m =result ;
             
-            x=Number(0);
+            x=Number(m.field6);
                            //alert(x);
 
         });
             $.getJSON("https://api.thingspeak.com/channels/1396129/fields/5/last.json?api_key=ZBQFTZWP4PKME82P", function(result){
         	
             var m = result;
-            y=Number(0);
+            y=Number(m.field5);
                 
                 
         }).done(function() {
